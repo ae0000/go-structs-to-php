@@ -32,7 +32,7 @@ func main() {
 	rootRouter.Post("/", (*Context).convertStruct)
 
 	// Serve
-	port := "3333"
+	port := "3334"
 	fmt.Printf("\x1b[32;1m --------- ConvertStructs [listening on port %s]\x1b[0m", port)
 	http.ListenAndServe("localhost:"+port, rootRouter)
 }
